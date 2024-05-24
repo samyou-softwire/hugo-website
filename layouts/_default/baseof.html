@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {{ if .Param "math" }}
+      {{ partialCached "math.html" . }}
+    {{ end }}
+</head>
+<body>
+    {{ $v1 := 6 }}
+    {{ $v2 := 7 }}
+    <p>The product of {{ $v1 }} and {{ $v2 }} is {{ mul $v1 $v2 }}.</p>
+    
+</body>
+</html>
