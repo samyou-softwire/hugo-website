@@ -1,4 +1,4 @@
 baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = 'en-gb'
+title = 'BTD6 Mastery Tips & Tricks'
 theme = 'ananke'
