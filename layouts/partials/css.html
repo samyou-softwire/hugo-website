@@ -1,6 +1,3 @@
-{{ with resources.Get "css/main.css" | postCSS }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}">
-{{ end }}
 {{ $opts := dict "transpiler" "dartsass" "targetPath" "css/style.css" }}
 {{ with resources.Get "sass/main.scss" | toCSS $opts | minify | fingerprint }}
   <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">

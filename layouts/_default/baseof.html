@@ -9,6 +9,9 @@
       {{ partialCached "math.html" . }}
     {{ end }}
     {{ partialCached "css.html" . }}
+    {{ block "css" . }}
+      
+    {{ end }}
   </head>
   <body>
     {{ block "main" . }}
