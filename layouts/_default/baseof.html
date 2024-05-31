@@ -8,6 +8,7 @@
     {{ if .Param "math" }}
       {{ partialCached "math.html" . }}
     {{ end }}
+    {{ partialCached "css.html" . }}
   </head>
   <body>
     {{ block "main" . }}
